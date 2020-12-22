@@ -68,7 +68,9 @@ a {
 header {
   height: 63px;
   text-align: center;
-  box-shadow: 0px 5px 5px #cfcfcf;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 header img {
   width: 164px;
@@ -82,13 +84,21 @@ header img {
   height: 50px;
   text-align: center;
 }
+.localization::before {
+  content: url(images/icons/map-marker-alt.svg);
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  top: 79px;
+  left: 104px;
+}
 .localization input {
   background-color: #eaeaea;
   border: none;
-  position: relative;
+  margin: 15px auto;
   padding: 1px 18px;
   text-align: center;
-  display: block;
+  font-weight: 500;
 }
 
 h1 {
@@ -128,6 +138,63 @@ h1 {
   top: 16px;
 }
 
+.operation {
+  padding-top: 50px;
+  padding-bottom: 44px;
+}
+
+.operation-title {
+  margin-bottom: 6px;
+}
+
+.operation-step {
+  display: flex;
+  align-items: center;
+  margin: 24px 0px 24px 13px;
+  padding-left: 34px;
+  width: 322px;
+  height: 73px;
+  border-radius: 1.25em;
+  background-color: #f6f6f6;
+  box-shadow: 0 5px 9px #e5e5e5;
+  font-weight: 600;
+  transition: all 300ms;
+}
+.operation-step svg {
+  transition: all 250ms;
+}
+.operation-step p {
+  position: absolute;
+  left: 107px;
+}
+.operation-step::before {
+  content: "1";
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  color: #fff;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 0.94em;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+}
+.operation-step:hover {
+  background-color: #f5edff;
+}
+.operation-step:hover svg {
+  fill: #9356DC;
+}
+
+.operation-step_2::before {
+  content: "2";
+}
+
+.operation-step_3::before {
+  content: "3";
+}
+
 .mobile-icon {
   width: 13px;
   fill: #7e7e7e;
@@ -141,11 +208,12 @@ h1 {
 .bars-icon {
   height: 17px;
   fill: #7e7e7e;
+  margin-left: 1px;
 }
 
 .store-icon {
-  width: 16px;
-  fill: #9356DC;
+  height: 18px;
+  fill: #7e7e7e;
 }
 
 /*# sourceMappingURL=style.css.map */
