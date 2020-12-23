@@ -310,4 +310,31 @@ h1 {
   right: 12px;
 }
 
+/*Footer style*/
+.footerContainer {
+  background-color: #353535;
+  color: #fff;
+  padding-top: 26px;
+  padding-bottom: 32px;
+}
+.footerContainer svg path {
+  fill: #fff;
+}
+.footerContainer li {
+  line-height: 1.6em;
+}
+.footerContainer li:nth-child(-n+2) {
+  font-weight: 500;
+}
+
+.footerLogo {
+  width: 98px;
+  margin-bottom: 15px;
+}
+
+.footer-list_icon {
+  width: 11px;
+  margin-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
