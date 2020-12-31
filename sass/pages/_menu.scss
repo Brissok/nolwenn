@@ -39,17 +39,28 @@ header {
     &__item {
         background-color: #fff;
         border-radius: 1rem;
-        padding: 10px 0 12px 11px;
-        margin: 8px auto;
-        @include shadow;
+        padding: 10px 22px 12px 11px;
+        margin: 14px auto;
+        @include shadow(2px);
+        & p , & h4 {
+            white-space: nowrap;
+            overflow: hidden;
+        }
     }
     &__name {
         font-size: 1.1em;
         font-weight: 700;
         line-height: 1.6;
+        text-overflow: ellipsis;
     }
     &__ingredient {
         font-size: .875em;
+        text-overflow: ellipsis;
+        &:after {
+            content: "00€";
+            float: right;
+            font-weight: 600;
+        }
     }
 }
 

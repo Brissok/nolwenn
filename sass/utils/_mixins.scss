@@ -1,5 +1,5 @@
 /* box-shadow */
 
-@mixin shadow($colour: rgb(229, 229, 229)) {
-    box-shadow: 0 5px 9px $colour;
+@mixin shadow($positionX: 5px, $colour: rgb(229, 229, 229)) {
+    box-shadow: 0 $positionX 9px $colour;
 }

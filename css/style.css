@@ -65,6 +65,7 @@ a {
 .title {
   font-family: "Shrikhand", cursive;
   font-weight: 300;
+  font-size: 1.7em;
 }
 
 h1, h2 {
@@ -84,7 +85,7 @@ h1, h2 {
   border-radius: 25px;
   text-align: center;
   padding: 1rem 1.4rem;
-  box-shadow: 0 5px 9px #cfcfcf;
+  box-shadow: 0 #cfcfcf 9px #e5e5e5;
 }
 
 .heart-icon {
@@ -355,17 +356,28 @@ header a {
 .menuContent__item {
   background-color: #fff;
   border-radius: 1rem;
-  padding: 10px 0 12px 11px;
-  margin: 8px auto;
-  box-shadow: 0 5px 9px #e5e5e5;
+  padding: 10px 22px 12px 11px;
+  margin: 14px auto;
+  box-shadow: 0 2px 9px #e5e5e5;
+}
+.menuContent__item p, .menuContent__item h4 {
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menuContent__name {
   font-size: 1.1em;
   font-weight: 700;
   line-height: 1.6;
+  text-overflow: ellipsis;
 }
 .menuContent__ingredient {
   font-size: 0.875em;
+  text-overflow: ellipsis;
+}
+.menuContent__ingredient:after {
+  content: "00€";
+  float: right;
+  font-weight: 600;
 }
 
 .btn__container {
