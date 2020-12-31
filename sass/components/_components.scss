@@ -1,0 +1,26 @@
+.btn {
+    margin-top: 30px;
+    color: #FFF;
+    background-image: linear-gradient(350deg, $primary, $secondary);
+    border-radius: 25px;
+    text-align: center;
+    padding: 1rem 1.4rem;
+    @include shadow(rgb(207, 207, 207));
+}
+
+.heart-icon {
+    width: 23px;
+    transition: all 300ms;
+    align-self: flex-end;
+    & .heart-center {
+        fill: transparent;
+    }
+    &:hover {
+        .heart-center {
+            fill: url(#Gradient1);
+        }
+        .heart-stroke {
+            fill: transparent;
+        }
+    }
+}

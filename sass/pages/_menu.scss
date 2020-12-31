@@ -1,0 +1,22 @@
+.menu-btn {
+    width: 186px;
+}
+header {
+    & a {
+        position: absolute;
+        top: 26px;
+        left: 23px;
+    }
+}
+
+.menuContainer {
+    background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash_sm.jpg);
+    background-size: 111%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 220px 0 0 0;
+    &__content {
+        background-color: $bg-grey;
+        border-radius: 2rem 2rem 0 0;
+    }
+}
