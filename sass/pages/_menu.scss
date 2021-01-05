@@ -20,7 +20,7 @@ header {
         padding-bottom: 48px;
     }
 }
-.menuContent {
+.menu {
 
     &__title {
         text-transform: uppercase;
@@ -39,13 +39,25 @@ header {
     &__item {
         background-color: #fff;
         border-radius: 1rem;
-        padding: 10px 22px 12px 11px;
         margin: 14px auto;
         @include shadow(2px);
         & p , & h4 {
             white-space: nowrap;
             overflow: hidden;
         }
+        &:hover {
+            .menuContent__price {
+                margin-right: 60px;
+            }
+        }
+        &--selected {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    }
+    &__text {
+        padding: 10px 22px 12px 11px;
     }
     &__name {
         font-size: 1.1em;
@@ -54,12 +66,32 @@ header {
         text-overflow: ellipsis;
     }
     &__ingredient {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
         font-size: .875em;
-        text-overflow: ellipsis;
-        &:after {
-            content: "00€";
-            float: right;
-            font-weight: 600;
+        }
+        & p {
+            text-overflow: ellipsis;
+        }
+    &__price {
+        font-weight: 600;
+        float: right;
+        margin-left: 16px;
+    }
+    &__selected {
+        background-color: $tertiary;
+        width: 59px;
+        height: 67px;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        text-align: center;
+        &__icon {
+            color: #fff;
+            top: 25px;
+            &::before {
+                top: 25px;
+            }
         }
     }
 }

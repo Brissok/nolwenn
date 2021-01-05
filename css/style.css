@@ -131,7 +131,7 @@ h1, h2 {
   font-weight: 500;
 }
 .footer__logo {
-  width: 98px;
+  font-size: larger;
   margin-bottom: 15px;
 }
 .footer__list--icon {
@@ -339,12 +339,12 @@ header a {
   padding-bottom: 48px;
 }
 
-.menuContent__title {
+.menu__title {
   text-transform: uppercase;
   margin-top: 33px;
   margin-bottom: 22px;
 }
-.menuContent__title:after {
+.menu__title:after {
   content: "";
   height: 3px;
   width: 40px;
@@ -353,31 +353,61 @@ header a {
   position: absolute;
   margin-top: 5px;
 }
-.menuContent__item {
+.menu__item {
   background-color: #fff;
   border-radius: 1rem;
-  padding: 10px 22px 12px 11px;
   margin: 14px auto;
   box-shadow: 0 2px 9px #e5e5e5;
 }
-.menuContent__item p, .menuContent__item h4 {
+.menu__item p, .menu__item h4 {
   white-space: nowrap;
   overflow: hidden;
 }
-.menuContent__name {
+.menu__item:hover .menuContent__price {
+  margin-right: 60px;
+}
+.menu__item--selected {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.menu__text {
+  padding: 10px 22px 12px 11px;
+}
+.menu__name {
   font-size: 1.1em;
   font-weight: 700;
   line-height: 1.6;
   text-overflow: ellipsis;
 }
-.menuContent__ingredient {
+.menu__ingredient {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   font-size: 0.875em;
+}
+.menu p {
   text-overflow: ellipsis;
 }
-.menuContent__ingredient:after {
-  content: "00€";
-  float: right;
+.menu__price {
   font-weight: 600;
+  float: right;
+  margin-left: 16px;
+}
+.menu__selected {
+  background-color: #99E2D0;
+  width: 59px;
+  height: 67px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: center;
+}
+.menu__selected__icon {
+  color: #fff;
+  top: 25px;
+}
+.menu__selected__icon::before {
+  top: 25px;
 }
 
 .btn__container {
