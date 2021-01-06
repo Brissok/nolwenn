@@ -5,7 +5,7 @@
     border-radius: 25px;
     text-align: center;
     padding: 1rem 1.4rem;
-    @include shadow(rgb(207, 207, 207));
+    @include shadow(5px, rgb(207, 207, 207));
 }
 
 .heart-icon {
