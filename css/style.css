@@ -85,22 +85,38 @@ h1, h2 {
   border-radius: 25px;
   text-align: center;
   padding: 1rem 1.4rem;
+  transition: all 300ms;
   box-shadow: 0 5px 9px #cfcfcf;
+}
+.btn:hover {
+  opacity: 0.85;
+  box-shadow: 0 5px 9px #9d9d9d;
 }
 
 .heart-icon {
   width: 23px;
-  transition: all 300ms;
   align-self: flex-end;
 }
+.heart-icon .heart-stroke {
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+  transform-origin: center;
+}
 .heart-icon .heart-center {
-  fill: transparent;
+  transform: scale(0);
+  transition: transform 430ms 200ms ease-in-out;
+  transform-origin: center;
+  opacity: 0;
 }
 .heart-icon:hover .heart-center {
   fill: url(#Gradient1);
+  transform: scale(1);
+  transform-origin: center;
+  opacity: 1;
 }
 .heart-icon:hover .heart-stroke {
-  fill: transparent;
+  transform: scale(0);
+  transform-origin: center;
 }
 .heart-icon--menu {
   position: absolute;
@@ -359,6 +375,8 @@ header a {
 }
 .menu__item:hover .menu__selected {
   width: 16%;
+  transform: scaleX(1);
+  transform-origin: right;
 }
 .menu__item:hover .menu__text {
   width: 84%;
@@ -393,6 +411,9 @@ header a {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   text-align: center;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 330ms ease-in-out;
 }
 .menu__selected__icon {
   color: #fff;
