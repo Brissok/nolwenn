@@ -21,7 +21,9 @@ header {
     }
 }
 .menu {
-
+    &__restaurant {
+        display: inline-block;
+    }
     &__title {
         text-transform: uppercase;
         margin-top: 33px;

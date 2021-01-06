@@ -102,6 +102,10 @@ h1, h2 {
 .heart-icon:hover .heart-stroke {
   fill: transparent;
 }
+.heart-icon--menu {
+  position: absolute;
+  right: 38px;
+}
 
 .header {
   text-align: center;
@@ -215,37 +219,20 @@ h1, h2 {
   position: absolute;
   left: 20px;
 }
-.operation__step:hover {
-  background-color: #f5edff;
-}
-.operation__step:hover .icon {
-  fill: #9356DC;
-}
 .operation__step--2::before {
   content: "2";
 }
 .operation__step--3::before {
   content: "3";
 }
-.operation .icon {
-  fill: #7e7e7e;
+.operation__step:hover {
+  background-color: #f5edff;
 }
-
-.mobile-icon {
-  width: 13px;
+.operation__step:hover .operation__icon {
+  color: #9356DC;
 }
-
-.ellipse-icon {
-  height: 15px;
-}
-
-.bars-icon {
-  height: 17px;
-  margin-left: 1px;
-}
-
-.store-icon {
-  height: 18px;
+.operation__icon {
+  color: #7e7e7e;
 }
 
 .restaurants {
@@ -339,6 +326,9 @@ header a {
   padding-bottom: 48px;
 }
 
+.menu__restaurant {
+  display: inline-block;
+}
 .menu__title {
   text-transform: uppercase;
   margin-top: 33px;

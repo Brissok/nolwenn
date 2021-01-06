@@ -70,36 +70,23 @@
             position: absolute;
             left: 20px;
         }
-        &:hover {
-            .icon {
-                fill: $primary;
-            }
-            background-color: #f5edff;
-        }
+        
         &--2::before {
             content: "2";
         }
         &--3::before {
             content: "3";
         }
+        &:hover {
+            .operation__icon {
+                color: $primary;
+            }
+            background-color: #f5edff;
         }
-    & .icon {
-        fill: #7e7e7e;
+        }
+    &__icon {
+        color: #7e7e7e;
     }
-}
-
-.mobile-icon {
-    width: 13px;
-}
-.ellipse-icon {
-    height: 15px;
-}
-.bars-icon {
-    height: 17px;
-    margin-left: 1px;
-}
-.store-icon {
-    height: 18px;
 }
 
 .restaurants {
