@@ -37,32 +37,37 @@ header {
         }
     }
     &__item {
+        display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
         background-color: #fff;
         border-radius: 1rem;
         margin: 14px auto;
         @include shadow(2px);
-        & p , & h4 {
+        overflow: hidden;
+        & p {
             white-space: nowrap;
             overflow: hidden;
         }
         &:hover {
-            .menuContent__price {
-                margin-right: 60px;
+            .menu {
+                &__selected {
+                   width: 16%; 
+                }
+                &__text {
+                    width: 84%;
+                }
             }
-        }
-        &--selected {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
         }
     }
     &__text {
         padding: 10px 22px 12px 11px;
+        width: 100%;
     }
     &__name {
         font-size: 1.1em;
         font-weight: 700;
-        line-height: 1.6;
+        margin: 4px 30px 4px 0;
         text-overflow: ellipsis;
     }
     &__ingredient {
@@ -81,17 +86,14 @@ header {
     }
     &__selected {
         background-color: $tertiary;
-        width: 59px;
-        height: 67px;
+        width: 0%;
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         text-align: center;
         &__icon {
             color: #fff;
-            top: 25px;
-            &::before {
-                top: 25px;
-            }
+            position: relative;
+            top: calc(50% - 8px);
         }
     }
 }
