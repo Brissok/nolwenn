@@ -54,13 +54,17 @@ header {
         &:hover {
             .menu {
                 &__selected {
-                   width: 16%;
-                   transform: scaleX(1);
+                   animation: checked-menu 300ms both;
                    transform-origin: right;
+                   &__icon {
+                       transform: rotate(360deg);
+                   } 
                 }
                 &__text {
-                    width: 84%;
+                  animation: checked-menu_text 300ms both;
+                  transform-origin: left;
                 }
+
             }
         }
     }
@@ -94,13 +98,14 @@ header {
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         text-align: center;
-        transform: scaleX(0);
         transform-origin: right;
-        transition: transform 330ms ease-in-out;
+        transition: transform 400ms ease-in-out;
         &__icon {
             color: #fff;
             position: relative;
             top: calc(50% - 8px);
+            transform: rotate(0deg);
+            transition: transform 400ms ease-in-out;
         }
     }
 }

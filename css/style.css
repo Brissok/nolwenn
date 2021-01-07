@@ -3,6 +3,45 @@
 /* responsive */
 /* Font Awesome Icons */
 /* box-shadow */
+@keyframes checked-menu {
+  0% {
+    transform: scaleX(0);
+    width: 0%;
+  }
+  17% {
+    transform: scaleX(0.18);
+    width: 3.6%;
+  }
+  24% {
+    transform: scaleX(0.4);
+    width: 8%;
+  }
+  46% {
+    transform: scaleX(0.81);
+    width: 16%;
+  }
+  100% {
+    transform: scaleX(1);
+    width: 20%;
+  }
+}
+@keyframes checked-menu_text {
+  0% {
+    width: 100%;
+  }
+  17% {
+    width: 96%;
+  }
+  24% {
+    width: 88%;
+  }
+  46% {
+    width: 83.6%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -374,12 +413,15 @@ header a {
   overflow: hidden;
 }
 .menu__item:hover .menu__selected {
-  width: 16%;
-  transform: scaleX(1);
+  animation: checked-menu 300ms both;
   transform-origin: right;
 }
+.menu__item:hover .menu__selected__icon {
+  transform: rotate(360deg);
+}
 .menu__item:hover .menu__text {
-  width: 84%;
+  animation: checked-menu_text 300ms both;
+  transform-origin: left;
 }
 .menu__text {
   padding: 10px 22px 12px 11px;
@@ -411,14 +453,15 @@ header a {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   text-align: center;
-  transform: scaleX(0);
   transform-origin: right;
-  transition: transform 330ms ease-in-out;
+  transition: transform 400ms ease-in-out;
 }
 .menu__selected__icon {
   color: #fff;
   position: relative;
   top: calc(50% - 8px);
+  transform: rotate(0deg);
+  transition: transform 400ms ease-in-out;
 }
 
 .btn__container {
