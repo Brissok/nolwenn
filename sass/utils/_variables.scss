@@ -19,3 +19,13 @@ $xlarge: "only screen and (min-width: #{$xlarge})";
 
 /* Font Awesome Icons */
 $fa-font-path: "../webfonts";
+
+/* loader */
+$num-loader: 3;
+$anim-dur: 2000ms;
+$anim-delay: $anim-dur / $num-loader;
+
+/* menu */
+$num-menu_item: 4;
+$anim-dur_menu: 800ms;
+$anim-delay_menu: $anim-dur_menu / $num-menu_item;

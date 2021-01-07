@@ -47,6 +47,12 @@ header {
         margin: 14px auto;
         @include shadow(2px);
         overflow: hidden;
+        animation: menu-apparition $anim-dur_menu cubic-bezier(0.22, 0.61, 0.36, 1) both;
+        @for $i from 1 through $num-menu_item {
+            &--#{$i} {
+                animation-delay: $anim-delay_menu * $i;
+            }
+        }
         & p {
             white-space: nowrap;
             overflow: hidden;

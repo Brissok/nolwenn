@@ -1,3 +1,39 @@
+/* loader */
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-end {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* menu apparition */
+
+@keyframes menu-apparition {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    80%, 100% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* check menu */
+
 @keyframes checked-menu {
     0% {
         transform: scaleX(0);

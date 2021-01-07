@@ -44,3 +44,38 @@
         right: 38px;
     }
 }
+
+/* Loader */
+
+.loader {
+    width: 100px;
+    &__container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        text-align: center;
+        position: absolute;
+        z-index: 5;
+        padding-top: 100px;
+        animation: loader-end 1000ms 2000ms forwards;
+    }
+    &__curve {
+        transform-origin: center;
+        animation: loader $anim-dur infinite ease-in-out;
+        @for $i from 1 through $num-loader {
+            &--#{$i} {
+                animation-delay: $anim-delay / $i;
+                animation-duration: $anim-dur / $i;
+            }
+        }
+        &--1 {
+            fill: $primary;
+        }
+        &--2 {
+            fill: $secondary;
+        }
+        &--3 {
+            fill: $tertiary;
+        }
+    }
+}
