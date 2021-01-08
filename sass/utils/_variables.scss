@@ -7,15 +7,15 @@ $bg-grey: #f6f6f6;
 
 /* responsive */
 
-$small: 425px!default;
+$small: 426px!default;
 $medium: 768px!default;
 $large: 991px!default;
 $xlarge: 1199!default;
 
-$small: "only screen and (min-width: #{$small})";
-$medium: "only screen and (min-width: #{$medium})";
-$large: "only screen and (min-width: #{$large})";
-$xlarge: "only screen and (min-width: #{$xlarge})";
+$small-up: "only screen and (min-width: #{$small})";
+$medium-up: "only screen and (min-width: #{$medium})";
+$large-up: "only screen and (min-width: #{$large})";
+$xlarge-up: "only screen and (min-width: #{$xlarge})";
 
 /* Font Awesome Icons */
 $fa-font-path: "../webfonts";

@@ -21,3 +21,9 @@ h1, h2 {
 .container {
     padding: 0 20px;   
 }
+
+@media #{$small-up} {
+    .container {
+        padding: 0 50px;
+    }
+}
