@@ -328,7 +328,7 @@ h1, h2 {
   align-items: center;
   margin: 24px 0px 24px 13px;
   padding-left: 34px;
-  max-width: 372px;
+  max-width: 335px;
   height: 73px;
   border-radius: 1.25em;
   background-color: #f6f6f6;
@@ -387,7 +387,7 @@ h1, h2 {
 .card {
   margin: 18px auto;
   width: 100%;
-  max-width: 384px;
+  max-width: 430px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -618,6 +618,17 @@ header a {
   margin-top: 46px;
 }
 
+@media only screen and (min-width: 1145px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+  .menu__block {
+    width: 335px;
+  }
+}
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
