@@ -508,6 +508,15 @@ header a {
     padding-top: 350px;
   }
 }
+@media only screen and (min-width: 1145px) {
+  .menuContainer {
+    background-size: 100%;
+    background-position-y: -250px;
+  }
+  .menuContainer__noteEnchantee {
+    background-position-y: -637px;
+  }
+}
 .menu {
   max-width: 384px;
   margin: 0 auto;

@@ -47,6 +47,15 @@ header {
         padding-top: 350px;
     }
 }
+@media #{$xlarge-up} {
+    .menuContainer {
+        background-size: 100%;
+        background-position-y: -250px;
+        &__noteEnchantee {
+            background-position-y: -637px;
+        }
+    }
+}
 .menu {
     max-width: 384px;
     margin: 0 auto;
