@@ -470,20 +470,20 @@ header a {
 }
 
 .menuContainer {
-  background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash_sm.jpg);
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash_sm.jpg);
   background-size: 111%;
   background-position: top center;
   background-repeat: no-repeat;
   padding: 220px 0 0 0;
 }
 .menuContainer__noteEnchantee {
-  background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash_sm.jpg);
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash_sm.jpg);
 }
 .menuContainer__aLaFrancaise {
-  background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_sm.jpg);
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_sm.jpg);
 }
 .menuContainer__deliceDesSens {
-  background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash_sm.jpg);
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash_sm.jpg);
 }
 .menuContainer__content {
   background-color: #f6f6f6;
