@@ -98,7 +98,7 @@ header {
         &:hover {
             .menu {
                 &__selected {
-                   animation: checked-menu 2000ms both alternate-reverse  ;
+                   width: 20%;
                    transform-origin: right;
           
                    &__icon {
@@ -106,8 +106,7 @@ header {
                    } 
                 }
                 &__text {
-                  animation: checked-menu_text 2000ms both;
-                  transform-origin: left;
+                    width: 80%;
                 }
             }
         }
@@ -115,6 +114,7 @@ header {
     &__text {
         padding: 10px 22px 12px 11px;
         width: 100%;
+        transition: all 400ms;
     }
     &__name {
         font-size: 1.1em;
@@ -138,12 +138,12 @@ header {
     }
     &__selected {
         background-color: $tertiary;
-        width: 0%;
+        width: 0;
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         text-align: center;
-        animation: checked-menu 400ms reverse both;
         transform-origin: right;
+        transition: all 400ms;
         &__icon {
             color: #fff;
             position: relative;
