@@ -181,6 +181,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
     }
     .card {
         min-width: 332px;

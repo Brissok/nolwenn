@@ -8,19 +8,19 @@ header {
 }
 
 .menuContainer {
-    background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash_sm.jpg);
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash_sm.jpg);
     background-size: 111%;
     background-position: top center;
     background-repeat: no-repeat;
     padding: 220px 0 0 0;
     &__noteEnchantee {
-        background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash_sm.jpg);
+        background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash_sm.jpg);
     }
     &__aLaFrancaise {
-        background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_sm.jpg);
+        background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash_sm.jpg);
     }
     &__deliceDesSens {
-        background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash_sm.jpg);
+        background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash_sm.jpg);
     }
     &__content {
         background-color: $bg-grey;
@@ -98,17 +98,17 @@ header {
         &:hover {
             .menu {
                 &__selected {
-                   animation: checked-menu 300ms both;
+                   animation: checked-menu 2000ms both alternate-reverse  ;
                    transform-origin: right;
+          
                    &__icon {
                        transform: rotate(360deg);
                    } 
                 }
                 &__text {
-                  animation: checked-menu_text 300ms both;
+                  animation: checked-menu_text 2000ms both;
                   transform-origin: left;
                 }
-
             }
         }
     }
@@ -142,8 +142,8 @@ header {
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         text-align: center;
+        animation: checked-menu 400ms reverse both;
         transform-origin: right;
-        transition: transform 400ms ease-in-out;
         &__icon {
             color: #fff;
             position: relative;

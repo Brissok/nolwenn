@@ -187,6 +187,9 @@ h1, h2 {
   transform-origin: center;
   opacity: 0;
 }
+.heart-icon:hover {
+  cursor: pointer;
+}
 .heart-icon:hover .heart-center {
   fill: url(#Gradient1);
   transform: scale(1);
@@ -209,11 +212,11 @@ h1, h2 {
   width: 100px;
 }
 .loader__container {
+  position: fixed;
   width: 100%;
   height: 100%;
   background-color: #fff;
   text-align: center;
-  position: absolute;
   padding-top: 100px;
   animation: loader-end 1000ms 2000ms both;
 }
@@ -456,6 +459,8 @@ h1, h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .card {
@@ -566,14 +571,14 @@ header a {
   overflow: hidden;
 }
 .menu__item:hover .menu__selected {
-  animation: checked-menu 300ms both;
+  animation: checked-menu 2000ms both alternate-reverse;
   transform-origin: right;
 }
 .menu__item:hover .menu__selected__icon {
   transform: rotate(360deg);
 }
 .menu__item:hover .menu__text {
-  animation: checked-menu_text 300ms both;
+  animation: checked-menu_text 2000ms both;
   transform-origin: left;
 }
 .menu__text {
@@ -606,8 +611,8 @@ header a {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   text-align: center;
+  animation: checked-menu 400ms reverse both;
   transform-origin: right;
-  transition: transform 400ms ease-in-out;
 }
 .menu__selected__icon {
   color: #fff;
