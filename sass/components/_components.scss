@@ -13,6 +13,8 @@
     }
 }
 
+/* heart */
+
 .heart-icon {
     align-self: flex-end;
     font-size: 22px;
@@ -40,12 +42,10 @@
         cursor: pointer;
         .heart-center {
             transform: scale(1);
-            transform-origin: center;
             opacity: 1;
         }
         .heart-stroke {
             transform: scale(0);
-            transform-origin: center;
         }
     }
     &--menu {

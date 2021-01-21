@@ -132,6 +132,7 @@ h1, h2 {
   box-shadow: 0 5px 9px #9d9d9d;
 }
 
+/* heart */
 .heart-icon {
   align-self: flex-end;
   font-size: 22px;
@@ -160,12 +161,10 @@ h1, h2 {
 }
 .heart-icon:hover .heart-center {
   transform: scale(1);
-  transform-origin: center;
   opacity: 1;
 }
 .heart-icon:hover .heart-stroke {
   transform: scale(0);
-  transform-origin: center;
 }
 .heart-icon--menu {
   display: inline;
@@ -537,7 +536,6 @@ header a {
 }
 .menu__item:hover .menu__selected {
   width: 20%;
-  transform-origin: right;
 }
 .menu__item:hover .menu__selected__icon {
   transform: rotate(360deg);
