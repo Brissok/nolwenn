@@ -1,0 +1,19 @@
+{
+  "name": "bricetchijouk_3_18122020",
+  "version": "1.0.0",
+  "description": "Ceci est le troisième projet de ma formation \"Développeur web\" d'OpenClassrooms : Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brissok/BriceTchijouk_3_18122020.git"
+  },
+  "author": "Brice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brissok/BriceTchijouk_3_18122020/issues"
+  },
+  "homepage": "https://github.com/Brissok/BriceTchijouk_3_18122020#readme"
+}
