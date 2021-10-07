@@ -18,18 +18,18 @@
 .heart-icon {
     align-self: flex-end;
     font-size: 22px;
+    width: 23px;
+    height: 23px;
     
     & .heart-stroke {
         position: relative;
-        left: 27px;
-        top: 2px;
         transform: scale(1);
         transition: transform 200ms ease-in-out;
         transform-origin: center;
     }
     & .heart-center {
         position: relative;
-        top: 2px;
+        top: -26px;
         transform: scale(0);
         transition: transform 430ms 200ms ease-in-out;
         transform-origin: center;
