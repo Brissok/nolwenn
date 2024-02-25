@@ -1,117 +1,130 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmyfood</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="fontawesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <div class="loader__container">
-        <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-         <path class="loader__curve loader__curve--1" fill="#000" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z"></path>
-         <path class="loader__curve loader__curve--2" fill="#000" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5L82,35.7z"></path>
-         <path class="loader__curve loader__curve--3" fill="#000" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z"></path>
-        </svg>
-        <div class="header__logo title">nolwenn</div>
-    </div>
-    <header class="header">
-        <div class="header__logo title">nolwenn</div>
-    </header>
-    <div class="container localization">
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="text" class="localization__input" value="Montrouge">
-    </div>
-    <section class="container explore">
-        <h1 class="explore__title">Réservez le menu qui vous convient</h1>
-        <p class="explore__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <a href="#"><div class="btn explore__btn"><p class="explore__btn_text">Explorer nos restaurants</p></div></a>
-    </section>
-    <section class="container operation">
-        <h2 class="operation__title">Fonctionnement</h2>
-        <div class="operation__step">    
-            <i class="fas fa-lg fa-mobile-alt operation__icon"></i>
-            <p>Choisissez un restaurant</p>
-        </div>
-        <div class="operation__step operation__step--2">
-            <i class="fas fa-list-ul operation__icon"></i>
-            <p>Composez votre menu</p>
-        </div>
-        <div class="operation__step operation__step--3">
-            <i class="fas fa-store operation__icon"></i>
-            <p>Dégustez au restaurant</p>
-        </div>
-    </section>
-    <section class="container restaurants">
-        <h2 class="restaurants__title">Photos</h2>
-        <div class="restaurant__content">
-            <a href="index2.html" class="card card--new">
-                <div class="card__img card__img--1"></div>
-                <div class="card__body">
-                    <div class="card__body--text">
-                        <h3 class="card__title">La famille</h3>
-                        <p class="card__text">Pornic</p>
-                    </div>
-                    <div class="heart-icon">
-                        <i class="far fa-heart icon heart-stroke"></i>
-                        <i class="fas fa-heart icon heart-center"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="html/menu_Lanoteenchantee.html" class="card card--new">
-                <div class="card__img card__img--2"></div>
-                <div class="card__body">
-                    <div class="card__body--text">
-                        <h3 class="card__title">La note enchantée</h3>
-                        <p class="card__text">Charonne</p>
-                    </div>
-                    <div class="heart-icon">
-                        <i class="far fa-heart icon heart-stroke"></i>
-                        <i class="fas fa-heart icon heart-center"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="html/menu_Alafrancaise.html" class="card">
-                <div class="card__img card__img--3"></div>
-                <div class="card__body">
-                    <div class="card__body--text">
-                        <h3 class="card__title">À la française</h3>
-                        <p class="card__text">Cité Rouge</p>
-                    </div>
-                    <div class="heart-icon">
-                        <i class="far fa-heart icon heart-stroke"></i>
-                        <i class="fas fa-heart icon heart-center"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="html/menu_Ledelicedessens.html" class="card">
-                <div class="card__img card__img--4"></div>
-                <div class="card__body">
-                    <div class="card__body--text">
-                        <h3 class="card__title">Le délice des sens</h3>
-                        <p class="card__text">Folie-Méricourt</p>
-                    </div>
-                    <div class="heart-icon">
-                        <i class="far fa-heart icon heart-stroke"></i>
-                        <i class="fas fa-heart icon heart-center"></i>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-    <footer class="container footer">
-        <div class="footer__logo title">ohmyfood</div>
-    
-        <ul class="footer__list">
-            <li><i class="fas fa-utensils fa-sm footer__list--icon"></i>Proposer un restaurant</li>
-            <li><i class="fas fa-hands-helping fa-xs footer__list--icon"></i>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li><a href="mailto:ohmyfood@info.com">Contact</a></li>
-        </ul>
-    </footer>
-</body>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>40ans | Ton foyer</title>
+		<meta name="description" content="Loading Effects for Grid Items with CSS Animations" />
+		<meta name="keywords" content="css animation, loading effect, google plus, grid items, masonry" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Joyeux anniversaire Nolwenn <span>clique sur les images pour découvrir des surprises</span></h1>	
+				<nav class="codrops-demos">
+					<a class="current-demo" href="index.html">Ton foyer</a>
+					<a href="index2.html">Tes parents</a>
+					<a href="index3.html">Les Limas</a>
+					<a href="index4.html">Les Tchijouk</a>
+					<a href="index5.html">Tes amis</a>
+				</nav>
+			</header>
+			<ul class="grid effect-2" id="grid">
+				<li><a href="http://drbl.in/fWMM"><img src="images/15.jpg"></a></li>
+				<li><a href="http://drbl.in/fWPV"><img src="images/16.jpg"></a></li>
+				<li><a href="http://drbl.in/fWMT"><img src="images/17.jpg"></a></li>
+				<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+				<li><a href="http://drbl.in/fHaa"><img src="images/18.jpg"></a></li>
+				<li><a href="http://drbl.in/gXMo"><img src="images/19.jpg"></a></li>
+				<li><a href="http://drbl.in/gXMn"><img src="images/20.jpg"></a></li>
+				<li><a href="http://drbl.in/fzYo"><img src="images/21.jpg"></a></li>
+				<li><a href="http://drbl.in/fARU"><img src="images/22.jpg"></a></li>
+				<li><a href="http://drbl.in/fGhI"><img src="images/23.jpg"></a></li>
+				<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+				<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+				<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+				<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+				<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+				<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+				<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+				<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+				<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+				<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+				<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+				<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+				<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+				<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+				<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+				<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+				<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+				<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+				<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+				<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+				<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+				<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+				<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+				<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+				<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+				<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+				<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+				<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+				<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+				<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+				<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+				<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+				<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+				<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+				<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+				<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+				<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+				<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+				<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+				<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+				<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+				<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+				<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+				<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+				<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+				<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+				<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+				<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+				<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+				<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+				<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+				<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+				<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+				<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+				<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+				<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+				<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+				<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+				<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+				<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+				<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+				<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+				<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+				<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+				<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+				<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+				<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+				<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+				<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+				<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+				<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+				<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+				<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+				<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+				<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+				<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+				<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+			</ul>
+		</div>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/imagesloaded.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/AnimOnScroll.js"></script>
+		<script>
+			new AnimOnScroll( document.getElementById( 'grid' ), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			} );
+		</script>
+	</body>
 </html>
