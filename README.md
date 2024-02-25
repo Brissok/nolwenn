@@ -2,7 +2,7 @@
 
 Ceci est le troisième projet de ma formation "Développeur web" d'OpenClassrooms : Dynamisez une page web avec des animations CSS
 
-Lien GitHub Page : https://brissok.github.io/BriceTchijouk_3_18122020/
+Lien GitHub Page : https://brissok.github.io/nolwenn/
 
 Fonctionnement
 
