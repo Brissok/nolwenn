@@ -26,7 +26,7 @@
 				</nav>
 			</header>
 			<ul class="grid effect-2" id="grid">
-				<li><a href="http://drbl.in/fWMM"><img src="images/15.jpg"></a></li>
+				<li><a href="#" id="mySizeChart"><img src="images/15.jpg"></a></li>
 				<li><a href="http://drbl.in/fWPV"><img src="images/16.jpg"></a></li>
 				<li><a href="http://drbl.in/fWMT"><img src="images/17.jpg"></a></li>
 				<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
@@ -114,6 +114,14 @@
 				<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
 				<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
 			</ul>
+			<div id="mySizeChartModal" class="ebcf_modal">
+
+				<div class="ebcf_modal-content">
+				  <span class="ebcf_close">&times;</span>
+				  <p>Some text in the Modal..</p>
+				</div>
+			  
+			  </div>
 		</div>
 		<script src="js/masonry.pkgd.min.js"></script>
 		<script src="js/imagesloaded.js"></script>
@@ -125,6 +133,31 @@
 				maxDuration : 0.7,
 				viewportFactor : 0.2
 			} );
+			// Get the modal
+			var ebModal = document.getElementById('mySizeChartModal');
+
+			// Get the button that opens the modal
+			var ebBtn = document.getElementById("mySizeChart");
+
+			// Get the <span> element that closes the modal
+			var ebSpan = document.getElementsByClassName("ebcf_close")[0];
+			
+			// When the user clicks the button, open the modal 
+			ebBtn.onclick = function() {
+			    ebModal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			ebSpan.onclick = function() {
+			    ebModal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			    if (event.target == ebModal) {
+			        ebModal.style.display = "none";
+			    }
+			}
 		</script>
 	</body>
 </html>
