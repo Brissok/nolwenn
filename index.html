@@ -118,7 +118,7 @@
 
 				<div class="ebcf_modal-content">
 				  <span class="ebcf_close">&times;</span>
-				  <div class="video-embarquee">
+				  <div id="myVideo" class="video-embarquee">
 					<iframe width="560" height="315" src="https://youtube.com/embed/hSlmfs1ceVA?si=hRGpmXbYyYfFjTYu" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -135,6 +135,30 @@
 				maxDuration : 0.7,
 				viewportFactor : 0.2
 			} );
+			// Vidéo script
+			var myVideo = document.getElementById('myVideo');
+
+            /*playButton.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    if (myVideo.requestFullscreen) {
+                        myVideo.requestFullscreen();
+                    }
+                    else if (myVideo.msRequestFullscreen) {
+                        myVideo.msRequestFullscreen();
+                    }
+                    else if (myVideo.mozRequestFullScreen) {
+                        myVideo.mozRequestFullScreen();
+                    }
+                    else if (myVideo.webkitRequestFullScreen) {
+                        myVideo.webkitRequestFullScreen();
+                    }
+                    myVideo.play();
+                }
+                else {
+                    myVideo.pause();
+                }
+            }, false);*/
+
 			// Get the modal
 			var ebModal = document.getElementById('mySizeChartModal');
 
@@ -145,9 +169,30 @@
 			var ebSpan = document.getElementsByClassName("ebcf_close")[0];
 			
 			// When the user clicks the button, open the modal 
-			ebBtn.onclick = function() {
-			    ebModal.style.display = "block";
-			}
+			//ebBtn.onclick = function() {
+			  //  ebModal.style.display = "block";
+			//}
+			ebBtn.addEventListener('click', function () {
+				ebModal.style.display = "block";
+                if (myVideo.paused) {
+                    if (myVideo.requestFullscreen) {
+                        myVideo.requestFullscreen();
+                    }
+                    else if (myVideo.msRequestFullscreen) {
+                        myVideo.msRequestFullscreen();
+                    }
+                    else if (myVideo.mozRequestFullScreen) {
+                        myVideo.mozRequestFullScreen();
+                    }
+                    else if (myVideo.webkitRequestFullScreen) {
+                        myVideo.webkitRequestFullScreen();
+                    }
+                    myVideo.play();
+                }
+                else {
+                    myVideo.pause();
+                }
+            }, false);
 
 			// When the user clicks on <span> (x), close the modal
 			ebSpan.onclick = function() {
